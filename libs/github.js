@@ -32,8 +32,8 @@ var search = function(keyword, cb) {
     console.log("Results: ");
     var items = o.items;
     items.forEach(function(item, index) {
-      if (index > 9) return;
-      console.log("  [%s] %s", index, item.full_name);
+      if (index > 8) return;
+      console.log("  [%s] %s", index + 1, item.full_name);
     });
 
     prompt.start();
@@ -45,7 +45,7 @@ var search = function(keyword, cb) {
       default: 0
     }, function(err, result) {
       if (result) {
-        cb(items[result.index].full_name);
+        cb(items[result.index - 1].full_name);
       }
     });
   });
