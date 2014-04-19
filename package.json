@@ -24,7 +24,6 @@
     "commander": "^2.2.0",
     "request": "^2.34.0",
     "jsdom": "^0.10.5",
-    "win-spawn": "^2.0.0",
     "prompt": "^0.2.12",
     "colorful": "^2.1.0",
     "async": "^0.7.0"
