@@ -1,0 +1,35 @@
+{
+  "name": "magicclone",
+  "version": "0.1.0",
+  "description": "A magic clone tool for github.",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter spec ./tests/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:sorrycc/magicclone.git"
+  },
+  "keywords": [
+    "clone"
+  ],
+  "author": "chencheng <sorrycc@gmail.com>",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "engines": {
+    "node": ">= 0.8.1"
+  },
+  "dependencies": {
+    "debug": "^0.8.0",
+    "commander": "^2.2.0",
+    "request": "^2.34.0",
+    "jsdom": "^0.10.5",
+    "win-spawn": "^2.0.0",
+    "prompt": "^0.2.12",
+    "colorful": "^2.1.0",
+    "async": "^0.7.0"
+  },
+  "devDependencies": {
+    "mocha": "^1.18.2"
+  }
+}

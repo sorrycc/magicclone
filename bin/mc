@@ -1,0 +1,39 @@
+#!/usr/bin/env node
+
+"use strict";
+
+var debug = require("debug")("mc");
+var program = require("commander");
+var mc = require("../");
+require('colorful').toxic();
+
+program
+  .version(require("../package").version, "-v, --version")
+  .option("-s, --search [keyword]", "search and clone")
+  .option("-o, --org [org]", "clone all repos under an orgnization")
+  .option("-u, --user [user]", "clone all repos under a user")
+  .parse(process.argv);
+
+var repo = program.args[0];
+if (repo && repo.indexOf("/") === -1) {
+  program.search = repo;
+  repo = null;
+}
+
+debug("repo: %s", repo);
+debug("search: %s", program.search || "");
+debug("org: %s", program.org || "");
+debug("user: %s", program.user || "");
+
+if (repo) {
+  mc.clone(repo);
+} else if (program.search) {
+  mc.search(program.search, mc.clone);
+} else if (program.org) {
+  mc.getRepos("org", program.org, mc.clone);
+} else if (program.user) {
+  mc.getRepos("user", program.user, mc.clone);
+} else {
+  console.log("\n  A magic clone cli for github.".blue.bold + " (v"+require("../package").version+")");
+  program.help();
+}
