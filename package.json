@@ -1,6 +1,6 @@
 {
   "name": "magicclone",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A magic clone tool for github.",
   "main": "index.js",
   "scripts": {
@@ -23,7 +23,6 @@
     "debug": "^0.8.0",
     "commander": "^2.2.0",
     "request": "^2.34.0",
-    "jsdom": "^0.10.5",
     "prompt": "^0.2.12",
     "colorful": "^2.1.0",
     "async": "^0.7.0"
