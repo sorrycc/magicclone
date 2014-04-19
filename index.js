@@ -1,6 +1,6 @@
 "use strict";
 
-exports.clone = require("./libs/clone");
-exports.search = require("./libs/github").search;
-exports.getRepos = require("./libs/github").getRepos;
+exports.clone = require("./lib/clone");
+exports.search = require("./lib/github").search;
+exports.getRepos = require("./lib/github").getRepos;
 
