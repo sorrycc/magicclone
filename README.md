@@ -15,6 +15,8 @@ npm install clonegroup -g
 
 ```bash
 $ mc [user]/[repo]
+$ mc [github url]
+$ mc [url end with .git]
 ```
 
 ### Search and clone
