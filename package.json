@@ -11,7 +11,9 @@
     "url": "git@github.com:sorrycc/magicclone.git"
   },
   "keywords": [
-    "clone"
+    "github",
+    "clone",
+    "magic"
   ],
   "author": "chencheng <sorrycc@gmail.com>",
   "license": "MIT",
