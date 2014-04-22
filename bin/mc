@@ -18,6 +18,8 @@ var repo = program.args[0];
 if (repo && repo.indexOf("/") === -1) {
   program.search = repo;
   repo = null;
+} else {
+  repo = mc.util.parseRepo(repo);
 }
 
 debug("repo: %s", repo);

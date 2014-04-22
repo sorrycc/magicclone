@@ -4,7 +4,7 @@
   "description": "A magic clone tool for github.",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha --reporter spec ./tests/"
+    "test": "./node_modules/.bin/mocha --reporter spec --require should ./tests/"
   },
   "repository": {
     "type": "git",
@@ -30,7 +30,8 @@
     "async": "^0.7.0"
   },
   "devDependencies": {
-    "mocha": "^1.18.2"
+    "mocha": "^1.18.2",
+    "should": "^3.3.1"
   },
   "bin": {
     "mc": "bin/mc"
