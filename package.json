@@ -1,6 +1,6 @@
 {
   "name": "magicclone",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "A magic clone tool for github.",
   "main": "index.js",
   "scripts": {
